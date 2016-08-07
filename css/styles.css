@@ -1,0 +1,58 @@
+main {
+	width:900px;
+}
+
+.boxResume {
+	width:900px;
+	height:700px;
+	float:left;
+	margin:0px;
+	background-image: url(../assets/RESUMEbackground.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.boxTBWA {
+	width:900px;
+	height:700px;
+	float:left;
+	margin:0px;
+	background-image: url(../assets/TBWAbackground.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.boxDentsu {
+	width:900px;
+	height:700px;
+	float:left;
+	margin:0px;
+	background-image: url(../assets/DENTSUbackground.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.boxTENGA {
+	width:900px;
+	height:700px;
+	float:left;
+	margin:0px;
+	background-image: url(../assets/TENGAbackground.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.boxSRP {
+	width:900px;
+	height:700px;
+	float:left;
+	margin:0px;
+	background-image: url(../assets/SRPbackground.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
