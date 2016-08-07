@@ -1,58 +1,90 @@
 main {
 	width:900px;
+	border-color: white;
+}
+
+h1 {
+	font-family: verdana, sans-serif;
+	font-style: bold;
+	font-size: 18px;
+
+}
+
+.R {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.test {
+	width:150px;
+	height:150px;
+	background-color: orange;
+
 }
 
 .boxResume {
 	width:900px;
 	height:700px;
-	float:left;
+	position:absolute;
+	left:10px;
+	top:0px;
 	margin:0px;
 	background-image: url(../assets/RESUMEbackground.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	z-index: -1;
 }
-
 .boxTBWA {
 	width:900px;
 	height:700px;
-	float:left;
-	margin:0px;
+	position:absolute;
+	left:10px;
+	top:700px;
 	background-image: url(../assets/TBWAbackground.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	z-index: -1;
 }
 
 .boxDentsu {
 	width:900px;
 	height:700px;
-	float:left;
-	margin:0px;
+	position:absolute;
+	left:10px;
+	top:1400px;
 	background-image: url(../assets/DENTSUbackground.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	z-index: -1;
 }
 
 .boxTENGA {
 	width:900px;
 	height:700px;
-	float:left;
-	margin:0px;
+	position:absolute;
+	left:10px;
+	top:2100px;
 	background-image: url(../assets/TENGAbackground.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	z-index: -1;
 }
 
 .boxSRP {
 	width:900px;
 	height:700px;
-	float:left;
-	margin:0px;
+	position:absolute;
+	left:10px;
+	top:2800px;
 	background-image: url(../assets/SRPbackground.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	z-index: -1;
 }
