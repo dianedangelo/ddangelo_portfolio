@@ -41,54 +41,55 @@ $(".link").on("click",function(e){
 });
 });
 
-// var currentSlide = 1;
-// var intervalId;
+var currentSlide = 1;
+var intervalId;
 
-// function goToSlideNumber(number){
-//   var selector = "#mcdonalds" + updateSlide(number);
-//   var fadeDuration = 1000;
-//   $(".mcdonalds").stop().not(selector).fadeOut(fadeDuration);
-//   $(selector).fadeIn(fadeDuration);
-// }
-// function slideForward() {
-//   clearInterval(intervalId);
-//   intervalId = null;
-//   goToSlideNumber(currentSlide+1);
-//   startCarousel();
-// }
-// function slideBackward() {
-//   clearInterval(intervalId);
-//   intervalId = null;
-//   goToSlideNumber(currentSlide-1);
-//   startCarousel();
-// }
+function goToSlideNumber(number){
+  var selector = "#mcdonalds" + updateSlide(number);
+  var fadeDuration = 1000;
+  $(".mcdonalds").stop().not(selector).fadeOut(fadeDuration);
+  $(selector).fadeIn(fadeDuration);
+}
+function slideForward() {
+  clearInterval(intervalId);
+  intervalId = null;
+  goToSlideNumber(currentSlide+1);
+  startCarousel();
+}
+function slideBackward() {
+  clearInterval(intervalId);
+  intervalId = null;
+  goToSlideNumber(currentSlide-1);
+  startCarousel();
+}
 
-// function updateSlide(number) {
-//   var slideCount = document.getElementsByClassName("mcdonalds").length;
-//   if( number > slideCount ) {
-//     number = 1;
-//   } else if( number < 1 ) {
-//     number = slideCount;
-//   }
-//   currentSlide = number;
-//   return number;
-// }
+function updateSlide(number) {
+  var slideCount = document.getElementsByClassName("mcdonalds").length; 
+  //why not using jquery here?
+  //How would you fetch elements by class name in jQuery?
+  if( number > slideCount ) {
+    number = 1;
+  } else if( number < 1 ) {
+    number = slideCount;
+  }
+  currentSlide = number;
+  return number;
+}
 
-// function startCarousel() {
-//   if( intervalId ) {
-//     clearInterval(intervalId);
-//   }
-//   intervalId = setInterval(function(){
-//     goToSlideNumber(currentSlide+1);
-//   },1000);
-// }
+function startCarousel() {
+  if(intervalId) {
+    clearInterval(intervalId);
+  }
+  intervalId = setInterval(function(){
+    goToSlideNumber(currentSlide+1);
+  },1000);
+}
 
-// $(document).on("ready",function(){
-//   startCarousel();
-//   $(".arrow-left").on("click",slideBackward);
-//   $(".arrow-right").on("click",slideForward);
-//    }); 
-// }
+$(document).on("ready",function(){
+  startCarousel();
+  $(".arrow-left").on("click",slideBackward);
+  $(".arrow-right").on("click",slideForward);
+}); 
 
 
 
